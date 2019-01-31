@@ -55,6 +55,9 @@
                                 <state key="normal" title="GET STARTED">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="Ifx-Rn-v78" kind="show" id="nBM-yn-Z2S"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -168,6 +171,20 @@
                                 <state key="normal" title="Next">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="9Es-Jh-qz2" kind="show" id="h9F-ha-cr0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Lp-VF-683">
+                                <rect key="frame" x="29" y="54" width="27" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="f3e-go-enY"/>
+                                    <constraint firstAttribute="width" constant="25" id="yeE-56-602"/>
+                                </constraints>
+                                <state key="normal" image="backButton"/>
+                                <connections>
+                                    <segue destination="5I6-wB-0XX" kind="unwind" unwindAction="unwindFromSkillVCWithUnwindSegue:" id="WLN-LM-PCq"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -178,6 +195,7 @@
                             <constraint firstItem="zgD-0M-S36" firstAttribute="trailing" secondItem="ZiK-yX-BQ0" secondAttribute="trailing" id="M4F-yX-ldB"/>
                             <constraint firstItem="8C1-VZ-1Yo" firstAttribute="top" secondItem="ZiK-yX-BQ0" secondAttribute="bottom" constant="84" id="WlW-fa-Glo"/>
                             <constraint firstItem="KjJ-oC-N7v" firstAttribute="leading" secondItem="zgD-0M-S36" secondAttribute="leading" id="X2I-1r-tBM"/>
+                            <constraint firstItem="8Lp-VF-683" firstAttribute="top" secondItem="zgD-0M-S36" secondAttribute="top" constant="10" id="Z99-X3-2zS"/>
                             <constraint firstItem="KjJ-oC-N7v" firstAttribute="top" secondItem="nNX-Ig-HKJ" secondAttribute="top" id="dsJ-xw-hpT"/>
                             <constraint firstItem="Krb-o2-RlW" firstAttribute="leading" secondItem="nNX-Ig-HKJ" secondAttribute="leading" constant="20" id="gkS-Rq-aH7"/>
                             <constraint firstItem="Krb-o2-RlW" firstAttribute="centerX" secondItem="nNX-Ig-HKJ" secondAttribute="centerX" id="kaq-Lz-g0M"/>
@@ -192,6 +210,7 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2um-dD-m75" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="5I6-wB-0XX" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1020.2898550724639" y="133.25892857142856"/>
         </scene>
@@ -252,13 +271,13 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D7I-DS-t6f" customClass="BorderButton" customModule="App_Swoosh" customModuleProvider="target">
-                                <rect key="frame" x="2" y="717" width="374" height="50"/>
+                                <rect key="frame" x="20" y="826" width="374" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="sgs-AI-O4r"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
-                                <state key="normal" title="Next">
+                                <state key="normal" title="Finish">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
@@ -290,6 +309,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="backButton" width="29" height="24"/>
         <image name="beginnerBallerBG" width="414" height="736"/>
         <image name="desiredLeagueBG" width="414" height="736"/>
         <image name="swooshLogo" width="119" height="20"/>
